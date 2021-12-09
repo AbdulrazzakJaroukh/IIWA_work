@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.21)
+project(fw)
+find_package(Eigen3 REQUIRED)
+include_directories(fw ${EIGEN3_INCLUDE_DIR})
+add_executable(fw forward-kinematic.cpp)
+target_link_libraries(fw ${EIGEN3_LIBS})
