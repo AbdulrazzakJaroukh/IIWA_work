@@ -149,7 +149,7 @@ Eigen::Matrix4d evalDHMatrix(double a, double d, double alpha, double theta)
 
 int main()
 {
-    std::vector<std::pair<std::string, std::vector<double>>> JointsValues = read_csv("/home/abdul/IIWA_work/iiwa-trajectory-joint-samples-without-tunning.csv");
+    std::vector<std::pair<std::string, std::vector<double>>> JointsValues = read_csv("/home/abdul//ws/src/IIWA_work/Input/iiwa-trajectory-joint-samples-without-tunning.csv");
 
     std::vector<std::pair<std::string, std::vector<double>>> CartesianCoordinates;
 
@@ -170,7 +170,7 @@ int main()
         CartesianCoordinates.at(1).second.push_back(Tr(1,3));
         CartesianCoordinates.at(2).second.push_back(Tr(2,3));
     }
-    write_csv("/home/abdul/IIWA_work/iiwa-trajectory-cartesian-samples-without-tunning.csv", CartesianCoordinates);
+    write_csv("/home/abdul//ws/src/IIWA_work/Output/iiwa-trajectory-cartesian-samples-without-tunning.csv", CartesianCoordinates);
 
     return 0;
 }
