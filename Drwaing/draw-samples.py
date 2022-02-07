@@ -19,7 +19,7 @@ ax = Axes3D(fig, auto_add_to_figure=False)
 fig.add_axes(ax)
 
 # Reading the data from a CSV file using pandas
-repo = pd.read_csv('/home/abdul/IIWA_work/iiwa-cartesian-coordinates-samples-without-tuning.csv', sep=',', header=0)
+repo = pd.read_csv('/home/abdul/ws/src/IIWA_work/Output/iiwa-cartesian-coordinates-samples-without-tuning.csv', sep=',', header=0)
 data = np.array((repo['x'].values, repo['y'].values, repo['z'].values))
 
 # exit()
